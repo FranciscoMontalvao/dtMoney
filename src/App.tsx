@@ -1,8 +1,16 @@
-export const  App =()=> {
+import { Dashboard } from "./components/Dashboard";
+import { Header } from "./components/Header";
+import { TransactionsTable } from "./components/TrasactionsTable";
+import { GlobalStyles } from "./styles/global";
+
+export const App = () => {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-    </div>
+    <>
+      <Header />
+      <Dashboard />
+      <TransactionsTable />
+      <GlobalStyles />
+    </>
   );
 }
 
